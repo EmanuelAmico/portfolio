@@ -11,7 +11,7 @@ const Header = () => {
         <a href="#aboutme">About Me</a>
         <a href="#contactme">Contact Me</a>
       </div>
-      <a href="#downloadcv" className="download-cv">Download CV</a>
+      <a href="#" className="download-cv">Download CV</a>
     </header>
   )
 }
