@@ -9,7 +9,7 @@ button {
   background-color: $secondary-color;
   color: $text-color;
   border: none;
-  padding: 1.6rem 3.2rem 1.6rem 3.2rem;
+  padding: 1.6rem 3.2rem;
   border-radius: 0.2rem;
   font-size: 1.7rem;
   font-weight: 700;
@@ -20,6 +20,7 @@ button {
   display: flex;
   align-items: center;
   width: fit-content;
+  font-family: $main-font;
 }
 
 button:hover {
