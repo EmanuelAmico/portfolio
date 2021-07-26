@@ -4,10 +4,12 @@ import "../assets/styles/components/Button.scss";
 
 const Button = ({ text }) => {
   return (
-    <button>
-      {text}
-      <img src={arrowIcon} alt="arrow icon" className="arrow" />
-    </button>
+    <a href="#projects" className="button-link">
+      <button>
+        {text}
+        <img src={arrowIcon} alt="arrow icon" className="arrow" />
+      </button>
+    </a>
   );
 };
 

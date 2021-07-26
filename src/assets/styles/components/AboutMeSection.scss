@@ -108,8 +108,15 @@
     width: 100%;
     height: auto;
   }
+  .hobbie-icon-container img {
+    width: 4.7rem;
+    height: 4.7rem;
+  }  
   .hobbies-container h3 {
     text-align: center;
+  }
+  .hobbies-container h4 {
+    font-size: 1.7rem;
   }
 }
 
