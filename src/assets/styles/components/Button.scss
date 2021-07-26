@@ -1,0 +1,30 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
+button {
+  background-color: $secondary-color;
+  color: $text-color;
+  border: none;
+  padding: 1.6rem 3.2rem 1.6rem 3.2rem;
+  border-radius: 0.2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  white-space: nowrap;
+  height: fit-content;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  background-color: $secondary-color;
+}
+
+button:focus {
+  outline: none;
+}
+
+.arrow {
+  margin-left: 1rem;
+}

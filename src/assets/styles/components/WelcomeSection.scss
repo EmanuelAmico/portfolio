@@ -1,0 +1,65 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
+.welcome-section {
+  height: calc(100vh - 8.2rem - 2.4rem);
+  margin: 0rem 12.8rem 0rem 12.8rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4.8rem;
+  /* border: 4px solid red; */
+  align-items: center;
+}
+
+.welcome-section h3 {
+  height: 7.8rem;
+  font-size: 6.4rem;
+  font-family: $main-font;
+  line-height: 7.8rem;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  color: $text-color;
+  margin-bottom: 0.8rem;
+}
+
+.welcome-section h4 {
+  height: 2.9rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0.08em;
+  color: $secondary-color;
+  font-family: $main-font;
+  margin-bottom: 3.2rem;
+}
+
+.title-container {
+  grid-column: 1/5;
+}
+
+.social-links-container {
+  grid-column: 10/13;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: flex-end;
+  margin: 0rem 0rem 6.4rem 0rem;
+}
+
+.social-links-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  font-family: $main-font;
+  color: $text-color;
+  text-decoration: none;
+}
+
+.social-links-container a img {
+  margin-left: 0.8rem;
+}
