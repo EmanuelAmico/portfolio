@@ -1,0 +1,69 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
+.contact-me {
+  height: calc(100vh - 8.2rem);
+  margin: 0rem 12.8rem 0rem 12.8rem;
+  display: grid;
+  place-items: center;
+  /* border: 4px solid red; */
+}
+
+.contact-me h4 {
+  font-size: 2.0rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: $text-color;
+  font-family: $main-font;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.contact-me h3 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 3.9rem;
+  font-family: $main-font;
+  color: $text-color;
+  text-align: center;
+  margin-bottom: 4.6rem;
+}
+
+.contact-me-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me-social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  font-family: $main-font;
+  color: $text-color;
+  text-decoration: none;
+  margin-right: 2.4rem;
+}
+
+.contact-me-social-links img {
+  margin-right: 0.8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-me {
+    margin: 0rem 4.8rem 0rem 4.8rem;
+  }
+  .contact-me-social-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-me-social-links a {
+    padding: 1.6rem;
+  }
+}
+
+
+
