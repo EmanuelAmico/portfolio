@@ -5,8 +5,10 @@ header {
   padding: 2.4rem;
   display: flex;
   justify-content: space-between;
+  background-color: $main-color;
   box-shadow: 0px 6px 16px 0px #00000059;
   position: sticky;
+  top: 0;
 }
 
 header img {
