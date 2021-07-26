@@ -1,0 +1,115 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
+.about-me {
+  height: calc(100vh - 8.2rem);
+  margin: 0rem 12.8rem 0rem 12.8rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  gap: 4.8rem;
+  align-items: center;
+  /* border: 4px solid red; */
+}
+
+.about-me-container {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+
+.about-me-container h3 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 3.9rem;
+  color: $text-color;
+  font-family: $main-font;
+  margin-bottom: 2.4rem;
+  margin-top: 2.4rem;  
+}
+
+.about-me-container p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: $text-color;
+  font-family: $secondary-font;
+  margin-bottom: 2.0rem;
+}
+
+.hobbies-container {
+  grid-column: 7/13;
+  grid-row: 1/2;  
+}
+
+.hobbies-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4.7rem 4.4rem;
+  /* border: 4px solid red; */
+}
+
+.hobbies-container h3 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 3.9rem;
+  color: $text-color;
+  font-family: $main-font;
+  margin-bottom: 2.4rem;
+}
+
+.hobbie-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 12rem;
+}
+
+.hobbie-icon-container img {
+  margin-bottom: 1.6rem;
+}
+
+
+.hobbie-icon-container h4 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: $main-font;
+  line-height: 2.2rem;
+  color: $text-color;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .about-me {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 0rem 4.6rem;
+    gap: 1.6rem 0rem;
+  }
+  .about-me-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .about-me-container h3 {
+    text-align: center;
+  }
+  .hobbies-container {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .hobbies-table {
+    gap: 2.35rem 2.2rem;
+    margin-bottom: 2.4rem;
+  }
+  .hobbie-icon-container {
+    width: 100%;
+    height: auto;
+  }
+  .hobbies-container h3 {
+    text-align: center;
+  }
+}
+
+
