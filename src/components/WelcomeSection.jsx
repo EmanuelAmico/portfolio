@@ -16,7 +16,7 @@ const WelcomeSection = () => {
       <div className="social-links-container">
         <a href="#">GitHub<img src={githubIcon} alt="github icon" /></a>
         <a href="#">LinkedIn<img src={linkedinIcon} alt="linkedin icon" /></a>
-        <a href="#">Download CV<img src={downloadIcon} alt="download icon" /></a>
+        <a href="#">Download CV<img src={downloadIcon} alt="download icon" id="projects" /></a>
       </div>
     </section>
   )
