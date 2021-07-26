@@ -8,14 +8,18 @@ import testImg3 from '../assets/static/img/test-img-3.jpg'
 import ContactMe from './ContactMe'
 
 const Home = () => {
-  const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit in aliquam odio et et facilisi sollicitudin nulla ultrices. In mi nunc, risus utate nulla augue aenean nam at."
+  const menteematchText = "I am developing together with a team of 6 people a mobile application for mentoring as a professional practice in the company, we are using agile and accessibility WCAG AA level. Technologies. -React Native -Express -MongoDB -NodeJS -Redux"
+  
+  const ecommerceText = "I developed a clothing e-commerce together with a team of 6 people in 2 weeks. I used agile methodologies and the following technologies were used. -PostgreSQL -Sequelize -Express -React -NodeJS -Redux"
+  
+  const omdbText = "I developed a web application independently, it allows you as an user to search for movies, show your profile, authenticate, save and show favorite movies. Technologies. -PostgreSQL -Sequelize -Express -ReactJS -REST API"
 
   return (
     <>
       <WelcomeSection />
-      <ProjectSection title="Proyecto 1" text={text} image={testImg1} />
-      <ProjectSection title="Proyecto 2" text={text} image={testImg2} />
-      <ProjectSection title="Proyecto 3" text={text} image={testImg3} />
+      <ProjectSection title="Project - MenteeMatch" text={menteematchText} image={testImg1} />
+      <ProjectSection title="Project - Deluxo" text={ecommerceText} image={testImg2} />
+      <ProjectSection title="Project - MyMovie" text={omdbText} image={testImg3} />
       <AboutSection />
       <ContactMe />
     </>

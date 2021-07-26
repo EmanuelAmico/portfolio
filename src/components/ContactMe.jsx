@@ -12,8 +12,8 @@ const ContactMe = () => {
         <h3>Let's work together</h3>
         <div className="contact-me-social-links">
           <a href="https://github.com/InevitableDesire" target="_blank"><img src={githubIcon} alt="github icon" />GitHub</a>
-          <a href="https://www.linkedin.com/in/alex-emanuel-amico-212923198/" target="_blank"><img src={linkedinIcon} alt="linkedin icon" />LinkedIn</a>
-          <a href="#"><img src={downloadIcon} alt="download icon" />Download CV</a>
+          <a href="https://www.linkedin.com/in/emanuel-amico/" target="_blank"><img src={linkedinIcon} alt="linkedin icon" />LinkedIn</a>
+          <a href="https://drive.google.com/file/d/14vQlcmCEKVMKMXXyva4FkhqKNyntFJUK/view?usp=sharing" target="_blank"><img src={downloadIcon} alt="download icon" />Download CV</a>
         </div>
       </div>
     </section>
