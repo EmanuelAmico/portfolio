@@ -17,9 +17,9 @@ const Home = () => {
   return (
     <>
       <WelcomeSection />
-      <ProjectSection title="Project - MenteeMatch" text={menteematchText} image={testImg1} />
-      <ProjectSection title="Project - Deluxo" text={ecommerceText} image={testImg2} />
-      <ProjectSection title="Project - MyMovie" text={omdbText} image={testImg3} />
+      <ProjectSection title="Project - MenteeMatch" text={menteematchText} image={testImg1} href="#" />
+      <ProjectSection title="Project - Deluxo" text={ecommerceText} image={testImg2} href="https://youtu.be/S4T-IAmdA2c" />
+      <ProjectSection title="Project - MyMovie" text={omdbText} image={testImg3} href="https://youtu.be/CnQ99PG1XOI" />
       <AboutSection />
       <ContactMe />
     </>
