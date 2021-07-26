@@ -1,9 +1,10 @@
 import React from 'react'
+import WelcomeSection from './WelcomeSection'
 
 const Home = () => {
   return (
     <>
-      <h1>Esta es la home</h1>
+      <WelcomeSection />
     </>
   )
 }
