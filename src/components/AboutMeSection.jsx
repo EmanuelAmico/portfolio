@@ -9,7 +9,7 @@ import '../assets/styles/components/AboutMeSection.scss'
 
 const AboutMeSection = () => {
   return (
-    <section className="about-me">
+    <section className="about-me" id="aboutme">
       <div className="about-me-container">
         <h3>About me</h3>
         <p>Mi pasión por la informática empezó estudiando electrónica en la universidad, donde conocí el mundo de la programación.</p>

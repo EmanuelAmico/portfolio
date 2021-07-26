@@ -5,7 +5,7 @@ import '../assets/styles/components/Header.scss'
 const Header = () => {
   return (
     <header>
-      <img src={logo} alt="Amico logo" />
+      <a href="#" className="logo-img"><img src={logo} alt="Amico logo" href="#"/></a>
       <div className="links">
         <a href="#projects">Projects</a>
         <a href="#aboutme">About Me</a>
