@@ -8,7 +8,7 @@ const ProjectSection = ({ title, text, image }) => {
       <div className="information-container">
         <h3>{title}</h3>
         <p>{text}</p>
-        <Button text="Ver online" />
+        <Button text="See online" />
       </div>
       <div className="img-container">
         <img src={image} alt="testing image" />

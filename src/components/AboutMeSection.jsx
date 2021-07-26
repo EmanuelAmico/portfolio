@@ -12,11 +12,11 @@ const AboutMeSection = () => {
     <section className="about-me" id="aboutme">
       <div className="about-me-container">
         <h3>About me</h3>
-        <p>Mi pasión por la informática empezó estudiando electrónica en la universidad, donde conocí el mundo de la programación.</p>
+        <p>My passion for computers began studying electronics at the university, where I got to know the world of programming.</p>
 
-        <p>En ese entonces, me dedicaba a la venta online de videojuegos y tuve la idea de optimizar mi trabajo programando una herramienta que me permitía calcular conversión de divisas, ganancias, comisiones y precios finales.</p>
+        <p>At that time, I was dedicated to the online sales of video games and I had the idea of ​​optimizing my work by programming a tool that allowed me to calculate currency conversion, earnings, commissions and final prices.</p>
 
-        <p>Cuando pude ver mi primer programa funcionando y como optimizó mis tareas del día a día, me di cuenta que había encontrado mi verdadera vocación.</p>
+        <p>When I was able to see my first program working and how it optimized my day-to-day tasks, I realized that I had found my true career.</p>
       </div>
       <div className="hobbies-container">
         <h3>Hobbies</h3>

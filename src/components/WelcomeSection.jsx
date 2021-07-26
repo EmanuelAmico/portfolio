@@ -15,8 +15,8 @@ const WelcomeSection = () => {
       </div>
       <div className="social-links-container">
         <a href="https://github.com/InevitableDesire" target="_blank">GitHub<img src={githubIcon} alt="github icon" /></a>
-        <a href="https://www.linkedin.com/in/alex-emanuel-amico-212923198/" target="_blank">LinkedIn<img src={linkedinIcon} alt="linkedin icon" /></a>
-        <a href="#">Download CV<img src={downloadIcon} alt="download icon" id="projects" /></a>
+        <a href="https://www.linkedin.com/in/emanuel-amico/" target="_blank">LinkedIn<img src={linkedinIcon} alt="linkedin icon" /></a>
+        <a href="https://drive.google.com/file/d/14vQlcmCEKVMKMXXyva4FkhqKNyntFJUK/view?usp=sharing" target="_blank">Download CV<img src={downloadIcon} alt="download icon" id="projects" /></a>
       </div>
     </section>
   )
