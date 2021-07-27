@@ -10,7 +10,7 @@ const WelcomeSection = () => {
     <section className="welcome-section">
       <div className="title-container">
         <h3>AMICO.</h3>
-        <h4>FULLSTACK WEB DEVELOPER</h4>
+        <h4>FULLSTACK DEVELOPER</h4>
         <Button text="View my work" href="#"/>
       </div>
       <div className="social-links-container">
