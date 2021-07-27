@@ -8,16 +8,16 @@ import testImg3 from '../assets/static/img/test-img-3.jpg'
 import ContactMe from './ContactMe'
 
 const Home = () => {
-  const menteematchText = "I am developing together with a team of 6 people a mobile application for mentoring as a professional practice in the company, we are using agile and accessibility WCAG AA level. Technologies. -React Native -Express -MongoDB -NodeJS -Redux"
+  const menteematchText = "I am developing a mobile application together with a team of 6 people as a professional practice in Globant. We are implementing agile and accessibility at a WCAG AA level. Technologies. • React Native • Express • MongoDB • NodeJS • Redux"
   
-  const ecommerceText = "I developed a clothing e-commerce together with a team of 6 people in 2 weeks. I used agile methodologies and the following technologies were used. -PostgreSQL -Sequelize -Express -React -NodeJS -Redux"
+  const ecommerceText = "I developed a clothing e-commerce together with a team of 6 people in 2 weeks. We used agile methodologies and the following technologies. • PostgreSQL • Sequelize • Express • React • NodeJS • Redux"
   
-  const omdbText = "I developed a web application independently, it allows you as an user to search for movies, show your profile, authenticate, save and show favorite movies. Technologies. -PostgreSQL -Sequelize -Express -ReactJS -REST API"
+  const omdbText = "I developed this web application independently, it allows you as an user to search for movies, show your profile, authenticate, save and show favorite movies. Technologies. • PostgreSQL • Sequelize • Express • ReactJS • REST API"
 
   return (
     <>
       <WelcomeSection />
-      <ProjectSection title="Project - MenteeMatch" text={menteematchText} image={testImg1} href="#" />
+      <ProjectSection title="Project - MenteeMatch" text={menteematchText} image={testImg1} href="https://youtu.be/08SFGWlJ6dM" />
       <ProjectSection title="Project - Deluxo" text={ecommerceText} image={testImg2} href="https://youtu.be/S4T-IAmdA2c" />
       <ProjectSection title="Project - MyMovie" text={omdbText} image={testImg3} href="https://youtu.be/CnQ99PG1XOI" />
       <AboutSection />
