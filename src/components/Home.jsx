@@ -2,9 +2,9 @@ import React from 'react'
 import ProjectSection from './ProjectSection'
 import WelcomeSection from './WelcomeSection'
 import AboutSection from './AboutMeSection'
-import testImg1 from '../assets/static/img/test-img-1.jpg'
-import testImg2 from '../assets/static/img/test-img-2.jpg'
-import testImg3 from '../assets/static/img/test-img-3.jpg'
+import menteematchImg from '../assets/static/img/MenteeMatch.jpg'
+import deluxoImg from '../assets/static/img/Deluxo.jpg'
+import omdbImg from '../assets/static/img/MyMovie.jpg'
 import ContactMe from './ContactMe'
 
 const Home = () => {
@@ -17,9 +17,9 @@ const Home = () => {
   return (
     <>
       <WelcomeSection />
-      <ProjectSection title="Project - MenteeMatch" text={menteematchText} image={testImg1} href="https://youtu.be/08SFGWlJ6dM" />
-      <ProjectSection title="Project - Deluxo" text={ecommerceText} image={testImg2} href="https://youtu.be/S4T-IAmdA2c" />
-      <ProjectSection title="Project - MyMovie" text={omdbText} image={testImg3} href="https://youtu.be/CnQ99PG1XOI" />
+      <ProjectSection title="Project - MenteeMatch" text={menteematchText} image={menteematchImg} href="https://youtu.be/08SFGWlJ6dM" />
+      <ProjectSection title="Project - Deluxo" text={ecommerceText} image={deluxoImg} href="https://youtu.be/S4T-IAmdA2c" />
+      <ProjectSection title="Project - MyMovie" text={omdbText} image={omdbImg} href="https://youtu.be/CnQ99PG1XOI" />
       <AboutSection />
       <ContactMe />
     </>
