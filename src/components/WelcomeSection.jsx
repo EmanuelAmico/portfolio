@@ -11,7 +11,7 @@ const WelcomeSection = () => {
       <div className="title-container">
         <h3>AMICO.</h3>
         <h4>FULLSTACK DEVELOPER</h4>
-        <Button text="View my work" href="#"/>
+        <Button text="View my work" href="#projects"/>
       </div>
       <div className="social-links-container">
         <a href="https://github.com/InevitableDesire" target="_blank">GitHub<img src={githubIcon} alt="github icon" /></a>
