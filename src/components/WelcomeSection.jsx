@@ -1,18 +1,17 @@
 import React from "react";
-import "../assets/styles/components/WelcomeSection.scss";
 import Button from "./Button";
 import githubIcon from "../assets/static/icons/github-icon.svg";
 import linkedinIcon from "../assets/static/icons/linkedin-icon.svg";
 import downloadIcon from "../assets/static/icons/download-icon.svg";
-import CutuCosito from "./CutuCosito";
-import '../assets/styles/components/CutuCosito.scss'
+import AnimationBackground from "./AnimationBackground";
+import "../assets/styles/components/WelcomeSection.scss";
 
 const WelcomeSection = () => {
   return (
     <section className="welcome-section">
       <div className="title-container">
         <h3>AMICO.</h3>
-        <CutuCosito/>
+        <AnimationBackground />
         <h4>FULLSTACK DEVELOPER JR.</h4>
         <Button text="View my work" href="#projects" target="" />
       </div>

@@ -1,6 +1,7 @@
 import React from 'react'
+import '../assets/styles/components/AnimationBackground.scss'
 
-const CutuCosito = () => {
+const AnimationBackground = () => {
   return (
     <div class="view">
         <div class="plane main">
@@ -15,4 +16,4 @@ const CutuCosito = () => {
   )
 }
 
-export default CutuCosito
+export default AnimationBackground
