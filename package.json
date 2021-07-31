@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "start": "webpack serve --mode development --env development",
-    "build": "webpack --mode  production"
+    "build": "webpack --mode  production",
+    "build-development": "webpack --mode development"
   },
   "dependencies": {
     "@babel/runtime": "^7.14.8",
