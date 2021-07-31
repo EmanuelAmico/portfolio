@@ -93,8 +93,18 @@
 }
 
 
-/* @media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
+
   .view{
-    display: none;
+    /* z-index: 10; */
   }
-} */
+
+  .plane{
+    height: auto;
+  }
+  .plane.main .circle{
+    width: 120px;
+    height: 120px;
+
+  }
+}
