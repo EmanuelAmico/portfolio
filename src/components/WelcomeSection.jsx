@@ -12,9 +12,9 @@ const WelcomeSection = () => {
     <section className="welcome-section">
       <div className="title-container">
         <h3>AMICO.</h3>
+        <CutuCosito/>
         <h4>FULLSTACK DEVELOPER JR.</h4>
         <Button text="View my work" href="#projects" target="" />
-        <CutuCosito/>
       </div>
       <div className="social-links-container">
         <a href="https://github.com/InevitableDesire" target="_blank">
