@@ -12,7 +12,7 @@ const WelcomeSection = () => {
       <div className="title-container">
         <h3>AMICO.</h3>
         <AnimationBackground />
-        <h4>FULLSTACK DEVELOPER JR.</h4>
+        <h4>FULL STACK DEVELOPER JR.</h4>
         <Button text="View my work" href="#projects" target="" />
       </div>
       <div className="social-links-container">
