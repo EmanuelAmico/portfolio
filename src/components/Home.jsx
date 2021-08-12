@@ -8,7 +8,7 @@ import omdbImg from '../assets/static/img/MyMovie.jpg'
 import ContactMe from './ContactMe'
 
 const Home = () => {
-  const menteematchText = "I am developing a mobile application together with a team of 6 people as a professional practice in Globant. We are implementing agile and accessibility at a WCAG AA level. Technologies. • React Native • Express • MongoDB • NodeJS • Redux"
+  const menteematchText = "I developed a mobile application together with a team of 6 people as a professional practice in Globant. We implemented agile and accessibility at a WCAG AA level. Technologies. • React Native • Express • MongoDB • NodeJS • Redux"
   
   const ecommerceText = "I developed a clothing e-commerce together with a team of 6 people in 2 weeks. We used agile methodologies and the following technologies. • PostgreSQL • Sequelize • Express • React • NodeJS • Redux"
   
@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <WelcomeSection />
-      <ProjectSection title="MenteeMatch" text={menteematchText} image={menteematchImg} href="https://youtu.be/08SFGWlJ6dM" />
+      <ProjectSection title="MenteeMatch" text={menteematchText} image={menteematchImg} href="https://youtu.be/kjqSv80KrOU" />
       <ProjectSection title="Deluxo" text={ecommerceText} image={deluxoImg} href="https://deluxo.com.ar" />
       <ProjectSection title="MyMovie" text={omdbText} image={omdbImg} href="https://youtu.be/CnQ99PG1XOI" />
       <AboutSection />
