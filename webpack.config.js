@@ -80,6 +80,10 @@ module.exports = {
       template: "./public/index.html",
       filename: "./index.html",
     }),
+    new HtmlWebPackPlugin({
+      template: "./public/googlef776b6bd76e01c41.html",
+      filename: "./googlef776b6bd76e01c41.html",
+    }),
     new MiniCssExtractPlugin({
       filename: "assets/[name].css",
     }),

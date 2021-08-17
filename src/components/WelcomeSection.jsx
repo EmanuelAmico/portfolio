@@ -13,20 +13,21 @@ const WelcomeSection = () => {
         <h3>AMICO.</h3>
         <AnimationBackground />
         <h4>FULL STACK DEVELOPER JR.</h4>
-        <Button text="View my work" href="#projects" target="" />
+        <Button text="View my work" href="#projects" />
       </div>
       <div className="social-links-container">
-        <a href="https://github.com/InevitableDesire" target="_blank">
+        <a href="https://github.com/InevitableDesire" target="_blank" rel="noopener">
           GitHub
           <img src={githubIcon} alt="github icon" />
         </a>
-        <a href="https://www.linkedin.com/in/emanuel-amico/" target="_blank">
+        <a href="https://www.linkedin.com/in/emanuel-amico/" target="_blank" rel="noopener">
           LinkedIn
           <img src={linkedinIcon} alt="linkedin icon" />
         </a>
         <a
           href="https://drive.google.com/file/d/14vQlcmCEKVMKMXXyva4FkhqKNyntFJUK/view?usp=sharing"
           target="_blank"
+          rel="noopener"
         >
           Download CV
           <img src={downloadIcon} alt="download icon" id="projects" />
