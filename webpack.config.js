@@ -64,6 +64,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.txt/,
+        type: 'asset',
+      }
     ],
   },
   devServer: {
