@@ -16,6 +16,10 @@ body {
   background-color: $main-color;
 }
 
+section {
+  transition: all 0.35s;
+}
+
 ::-webkit-scrollbar {
   width: 1.2rem;
 }
