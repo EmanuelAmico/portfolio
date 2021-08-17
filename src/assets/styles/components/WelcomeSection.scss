@@ -58,6 +58,11 @@
   padding: 1.2rem 0
 }
 
+.social-links-container a:hover{
+  color: $text-color-hover;
+  transition: all 0.35s;
+}
+
 .social-links-container a img {
   margin-left: 0.8rem;
 }
