@@ -37,6 +37,7 @@ nav img {
 }
 
 .links a:hover {
+  transition: all 0.35s;
   color: $text-color-hover;
 }
 
@@ -49,6 +50,11 @@ nav img {
   font-family: $main-font;
   padding: 0.8rem 1.6rem 0.8rem 1.6rem;
   border-radius: 2rem;
+}
+
+.download-cv:hover {
+  transition: all 0.35s;
+  background-color: #f4f4f4e7;
 }
 
 @media only screen and (max-width: 600px) {
