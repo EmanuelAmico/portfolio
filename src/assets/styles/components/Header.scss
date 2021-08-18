@@ -22,6 +22,11 @@ nav img {
   align-items: center;
 }
 
+.logo-img img:hover {
+  transition: all 0.35s;
+  opacity: 0.975;
+}
+
 .links {
   display: flex;
   align-items: center;
