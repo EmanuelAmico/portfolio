@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import '../assets/styles/components/ProjectSection.scss'
+import githubIcon from '../assets/static/icons/github-icon.svg'
 
 const ProjectSection = ({ title, text, image, href }) => {
   return (
