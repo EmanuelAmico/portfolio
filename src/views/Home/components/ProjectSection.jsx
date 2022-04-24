@@ -1,7 +1,6 @@
-import React from 'react'
-import Button from './Button'
-import '../assets/styles/components/ProjectSection.scss'
-import githubIcon from '../assets/static/icons/github-icon.svg'
+import React from "react";
+import Button from "../../../commons/Button";
+import "../../../assets/styles/components/ProjectSection.scss";
 
 const ProjectSection = ({ title, text, image, href }) => {
   return (
@@ -15,7 +14,7 @@ const ProjectSection = ({ title, text, image, href }) => {
         <img src={image} alt="testing image" />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectSection
+export default ProjectSection;

@@ -93,14 +93,13 @@
   }
 }
 
-
 @media only screen and (max-width: 640px) {
-  .plane{
+  .plane {
     height: auto;
   }
-  .plane.main .circle{
+  .plane.main .circle {
     width: 100vw;
     height: 100vh;
     box-shadow: 0 0 10px #713afbce, inset 0 0 60px $chromatica;
-  }  
+  }
 }
