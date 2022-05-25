@@ -3,10 +3,12 @@ import githubIcon from "../../../assets/static/icons/github-icon.svg";
 import linkedinIcon from "../../../assets/static/icons/linkedin-icon.svg";
 import downloadIcon from "../../../assets/static/icons/download-icon.svg";
 import "../../../assets/styles/components/ContactMe.scss";
+import InternalLinkHelper from "../../../commons/InternalLinkHelper";
 
-const ContactMe = () => {
+const ContactMe = ({ headerHeight }) => {
   return (
-    <section className="contact-me" id="contactme">
+    <section className="contact-me position-relative">
+      <InternalLinkHelper elementHeight={headerHeight} id="contact-me" />
       <div>
         <h4>Are you interested in my profile?</h4>
         <h3>Let's work together</h3>

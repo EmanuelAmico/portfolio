@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectSection from "./components/ProjectSection";
 import WelcomeSection from "./components/WelcomeSection";
 import AboutMeSection from "./components/AboutMeSection";
@@ -6,8 +6,11 @@ import menteematchImg from "../../assets/static/img/MenteeMatch.jpg";
 import deluxoImg from "../../assets/static/img/Deluxo.jpg";
 import omdbImg from "../../assets/static/img/MyMovie.jpg";
 import ContactMeSection from "./components/ContactMeSection";
+import AnimationBackground from "./components/AnimationBackground";
+import Header from "./components/Header";
 
 const Home = () => {
+  const [headerClientHeight, setHeaderClientHeight] = useState(null);
   const menteematchText =
     "I developed a mobile application together with a team of 6 people as a professional practice in Globant. We implemented agile and accessibility at a WCAG AA level. Technologies. • React Native • Express • MongoDB • NodeJS • Redux";
 
@@ -19,12 +22,14 @@ const Home = () => {
 
   return (
     <>
+      <Header height={headerClientHeight} setHeight={setHeaderClientHeight} />
       <WelcomeSection />
       <ProjectSection
         title="MenteeMatch"
         text={menteematchText}
         image={menteematchImg}
         href="https://youtu.be/kjqSv80KrOU"
+        headerHeight={headerClientHeight}
       />
       <ProjectSection
         title="Deluxo"
@@ -38,8 +43,9 @@ const Home = () => {
         image={omdbImg}
         href="https://mymovie.com.ar"
       />
-      <AboutMeSection />
-      <ContactMeSection />
+      <AboutMeSection headerHeight={headerClientHeight} />
+      <ContactMeSection headerHeight={headerClientHeight} />
+      <AnimationBackground />
     </>
   );
 };

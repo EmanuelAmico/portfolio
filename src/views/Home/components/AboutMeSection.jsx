@@ -6,10 +6,12 @@ import catIcon from "../../../assets/static/icons/cat-icon.svg";
 import travelIcon from "../../../assets/static/icons/travel-icon.svg";
 import animeIcon from "../../../assets/static/icons/anime-icon.svg";
 import "../../../assets/styles/components/AboutMeSection.scss";
+import InternalLinkHelper from "../../../commons/InternalLinkHelper";
 
-const AboutMeSection = () => {
+const AboutMeSection = ({ headerHeight }) => {
   return (
-    <section className="about-me" id="aboutme">
+    <section className="about-me position-relative">
+      <InternalLinkHelper elementHeight={headerHeight} id="about-me" />
       <div className="about-me-container">
         <h3>About me</h3>
         <p>
@@ -19,14 +21,14 @@ const AboutMeSection = () => {
 
         <p>
           At that time, I was dedicated to the online sales of video games and I
-          had the idea of ​​optimizing my work by programming tools that
-          allowed me to calculate currency conversion, earnings, commissions and
-          final prices.
+          had the idea of ​​optimizing my work by programming tools that allowed
+          me to calculate currency conversion, earnings, commissions and final
+          prices.
         </p>
 
         <p>
           When I was able to see my first program working and how it optimized
-          my day-to-day tasks, I realized that I had found my true career.
+          my day-to-day tasks, I realized that I had found my true career!.
         </p>
       </div>
       <div className="hobbies-container">

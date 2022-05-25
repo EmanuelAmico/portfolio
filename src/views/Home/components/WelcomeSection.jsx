@@ -3,7 +3,6 @@ import Button from "../../../commons/Button";
 import githubIcon from "../../../assets/static/icons/github-icon.svg";
 import linkedinIcon from "../../../assets/static/icons/linkedin-icon.svg";
 import downloadIcon from "../../../assets/static/icons/download-icon.svg";
-import AnimationBackground from "./AnimationBackground";
 import "../../../assets/styles/components/WelcomeSection.scss";
 
 const WelcomeSection = () => {
@@ -11,9 +10,8 @@ const WelcomeSection = () => {
     <section className="welcome-section">
       <div className="title-container">
         <h3>AMICO.</h3>
-        <AnimationBackground />
-        <h4>FULL STACK DEVELOPER JR.</h4>
-        <Button text="View my work" href="#projects" />
+        <h4>FULL STACK DEVELOPER</h4>
+        <Button text="View my work" href="#projects-start" />
       </div>
       <div className="social-links-container">
         <a
@@ -22,7 +20,7 @@ const WelcomeSection = () => {
           rel="noopener"
         >
           Download CV
-          <img src={downloadIcon} alt="download icon" id="projects" />
+          <img src={downloadIcon} alt="download icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/emanuel-amico/"
