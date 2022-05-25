@@ -34,6 +34,5 @@ section {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-
 @import "./Media.scss"; // -> Este es el archivo que contiene los media query's
 // EL media query lo tengo que importar abajo sino no toma precedencia al html de la linea 10

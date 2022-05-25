@@ -55,10 +55,10 @@
   font-family: $main-font;
   color: $text-color;
   text-decoration: none;
-  padding: 1.2rem 0
+  padding: 1.2rem 0;
 }
 
-.social-links-container a:hover{
+.social-links-container a:hover {
   color: $text-color-hover;
   transition: all 0.35s;
 }
@@ -73,10 +73,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
   }
-  .welcome-section h4, h3 {
+  .welcome-section h4,
+  h3 {
     text-align: center;
     height: fit-content;
-  }  
+  }
   .title-container {
     grid-column: 1/1;
     grid-row: 1/2;
