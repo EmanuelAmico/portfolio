@@ -24,7 +24,7 @@
   color: $text-color;
   font-family: $main-font;
   margin-bottom: 2.4rem;
-  margin-top: 2.4rem;  
+  margin-top: 2.4rem;
 }
 
 .about-me-container p {
@@ -38,7 +38,7 @@
 
 .hobbies-container {
   grid-column: 7/13;
-  grid-row: 1/2;  
+  grid-row: 1/2;
 }
 
 .hobbies-table {
@@ -71,7 +71,6 @@
   margin-bottom: 1.6rem;
 }
 
-
 .hobbie-icon-container h4 {
   font-size: 1.8rem;
   font-weight: 800;
@@ -86,11 +85,9 @@
     gap: 2.4rem 2.4rem;
     grid-template-columns: repeat(2, 1fr);
   }
-  
 }
 
 @media only screen and (max-width: 991px) {
-  
   .about-me {
     display: block;
     height: auto;
@@ -128,19 +125,19 @@
   .hobbie-icon-container img {
     width: 4.6rem;
     height: 4.6rem;
-  }  
+  }
   .hobbies-container h3 {
     text-align: center;
   }
   .hobbies-container h4 {
     font-size: 1.7rem;
   }
-  
-  .img-container{
-    margin-bottom: 0
+
+  .img-container {
+    margin-bottom: 0;
   }
-  
-  .about-me-container p{
+
+  .about-me-container p {
     margin-bottom: 3.2rem;
   }
 }
