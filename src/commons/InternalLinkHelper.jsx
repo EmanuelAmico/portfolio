@@ -1,5 +1,6 @@
 import React from "react";
 
+// For it to work, parent element of this component must be relative-positioned.
 const InternalLinkHelper = ({ id, elementHeight }) => {
   const style = {
     position: "absolute",
