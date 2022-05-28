@@ -14,3 +14,8 @@ $text-title-color: #7930ff;
 $chromatica: #ec0092;
 $laser-beam-border-desktop: #723afbc9;
 $laser-beam-border-mobile: #713afbce;
+
+// Adding css variables
+:root {
+  --header-height: controlled-by-js-on-render;
+}

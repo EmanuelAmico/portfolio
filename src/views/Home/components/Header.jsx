@@ -4,12 +4,19 @@ import "../../../assets/styles/components/Header.scss";
 
 const Header = ({ height, setHeight }) => {
   const headerRef = useRef(null);
-  console.log(height);
 
   useEffect(() => {
-    !height && setHeight(headerRef.current.clientHeight);
+    const setHeightTo = (height) => {
+      document.documentElement.style.setProperty(
+        "--header-height",
+        `${height}px`
+      );
+      setHeight(height);
+    };
 
-    const handleResize = () => setHeight(headerRef.current.clientHeight);
+    !height && setHeightTo(headerRef.current.clientHeight);
+
+    const handleResize = () => setHeightTo(headerRef.current.clientHeight);
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
