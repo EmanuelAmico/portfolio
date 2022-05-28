@@ -1,7 +1,7 @@
 @import "../Vars.scss";
 
 .about-me {
-  height: calc(100vh - 8.2rem);
+  height: calc(100vh - var(--header-height));
   width: 80%;
   margin: auto;
   display: grid;
@@ -92,7 +92,7 @@
   }
 
   .about-me-container {
-    height: calc(100vh - 8.2rem);
+    height: calc(100vh - var(--header-height));
     display: flex;
     flex-direction: column;
     justify-content: center;
