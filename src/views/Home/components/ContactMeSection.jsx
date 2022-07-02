@@ -30,7 +30,7 @@ const ContactMe = ({ headerHeight }) => {
             LinkedIn
           </a>
           <a
-            href="https://github.com/InevitableDesire"
+            href="https://github.com/EmanuelAmico"
             target="_blank"
             rel="noopener"
           >
