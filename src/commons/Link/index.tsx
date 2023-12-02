@@ -2,15 +2,16 @@ import React, { FC } from "react";
 import arrowIcon from "../../../public/icons/arrow-icon.svg";
 import Image from "next/image";
 import s from "./styles.module.scss";
+import NextLink from "next/link";
 
 type Props = {
   text: string;
   href: string;
 };
 
-const Button: FC<Props> = ({ text, href }) => {
+const Link: FC<Props> = ({ text, href }) => {
   return (
-    <a
+    <NextLink
       href={href}
       target={href.startsWith("#") ? "" : "_blank"}
       rel={href.startsWith("#") ? "" : "noopener"}
@@ -20,8 +21,8 @@ const Button: FC<Props> = ({ text, href }) => {
         {text}
         <Image src={arrowIcon} alt="arrow icon" className={s.arrow} />
       </button>
-    </a>
+    </NextLink>
   );
 };
 
-export default Button;
+export default Link;

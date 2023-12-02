@@ -2,6 +2,7 @@ import React, { useRef, useEffect, FC } from "react";
 import logo from "../../../public/img/logo.svg";
 import s from "./styles.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   height: number | null | undefined;
@@ -34,22 +35,22 @@ const Header: FC<Props> = ({ height, setHeight }) => {
   return (
     <header ref={headerRef} className={s.header}>
       <nav className={s.nav}>
-        <a href="#start" className={s.logoImg}>
+        <Link href="#start" className={s.logoImg}>
           <Image src={logo} alt="Amico logo" />
-        </a>
+        </Link>
         <div className={s.links}>
-          <a href="#projects-start">Projects</a>
-          <a href="#about-me">About Me</a>
-          <a href="#contact-me">Contact Me</a>
+          <Link href="#projects-start">Projects</Link>
+          <Link href="#about-me">About Me</Link>
+          <Link href="#contact-me">Contact Me</Link>
         </div>
-        <a
+        <Link
           href="https://drive.google.com/file/d/14vQlcmCEKVMKMXXyva4FkhqKNyntFJUK/view?usp=sharing"
           target="_blank"
           rel="noopener"
           className={s.downloadCV}
         >
           Download CV
-        </a>
+        </Link>
       </nav>
     </header>
   );
