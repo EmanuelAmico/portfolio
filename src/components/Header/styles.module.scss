@@ -1,0 +1,74 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  padding: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $main-color;
+  box-shadow: 0px 6px 16px 0px #00000059;
+}
+
+.nav img {
+  cursor: pointer;
+}
+
+.logoImg {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg img:hover {
+  transition: all 0.35s;
+  opacity: 0.975;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: $text-color;
+  font-family: $main-font;
+  font-weight: 700;
+  padding: 0rem 3.2rem 0rem 3.2rem;
+}
+
+.links a:hover {
+  transition: all 0.35s;
+  color: $text-color-hover;
+}
+
+.downloadCV {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: $main-color;
+  background-color: $text-color;
+  font-weight: 700;
+  font-family: $main-font;
+  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+  border-radius: 2rem;
+}
+
+.downloadCV:hover {
+  transition: all 0.35s;
+  background-color: #f4f4f4e7;
+}
+
+@media only screen and (max-width: 600px) {
+  .downloadCV {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .links a {
+    padding: 0 2.8rem;
+  }
+}
