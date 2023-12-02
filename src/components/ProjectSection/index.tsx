@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Image, { StaticImageData } from "next/image";
 import InternalLinkHelper from "@/commons/InternalLinkHelper";
-import Button from "@/commons/Button";
+import Link from "@/commons/Link";
 import s from "./styles.module.scss";
 
 type Props = {
@@ -27,7 +27,7 @@ const ProjectSection: FC<Props> = ({
       <div className={s.informationContainer}>
         <h3>{title}</h3>
         <p>{text}</p>
-        <Button text="See online" href={href} />
+        <Link text="See online" href={href} />
       </div>
       <div className={s.imgContainer}>
         <Image src={image} alt="project image" />
