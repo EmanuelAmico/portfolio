@@ -1,0 +1,6 @@
+{
+  "**/*.{js,jsx,ts,tsx}": [
+    "prettier -w",
+    "eslint --ignore-path .eslintignore --max-warnings=0"
+  ]
+}
