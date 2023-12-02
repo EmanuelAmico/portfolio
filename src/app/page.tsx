@@ -1,95 +1,54 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+import React, { useState } from "react";
+import Header from "@/components/Header";
+import AboutMeSection from "@/components/AboutMeSection";
+import AnimationBackground from "@/commons/AnimationBackground";
+import WelcomeSection from "@/components/WelcomeSection";
+import menteematchImg from "../../public/img/MenteeMatch.jpg";
+import deluxoImg from "../../public/img/Deluxo.jpg";
+import omdbImg from "../../public/img/MyMovie.jpg";
+import ProjectSection from "@/components/ProjectSection";
+import ContactMeSection from "@/components/ContactMeSection";
 
 export default function Home() {
+  const [headerClientHeight, setHeaderClientHeight] = useState<
+    number | null | undefined
+  >(null);
+  const menteematchText =
+    "I developed a mobile application together with a team of 6 people as a professional practice in Globant. We implemented agile and accessibility at a WCAG AA level. Technologies. • React Native • Express • MongoDB • NodeJS • Redux";
+
+  const ecommerceText =
+    "I developed a clothing e-commerce together with a team of 6 people in 2 weeks. We used agile methodologies and the following technologies. • PostgreSQL • Sequelize • Express • React • NodeJS • Redux • Front-end deployed on Vercel • Back-end deployed on AWS";
+
+  const omdbText =
+    "I developed this web application independently, it allows you as an user to search for movies, show your profile, authenticate, save and show favorite movies. Technologies. • MongoDB • Mongoose • Express • ReactJS • REST API • Front-end deployed on Vercel • Back-end deployed on AWS";
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    <>
+      <Header height={headerClientHeight} setHeight={setHeaderClientHeight} />
+      <WelcomeSection />
+      <ProjectSection
+        title="MenteeMatch"
+        text={menteematchText}
+        image={menteematchImg}
+        href="https://youtu.be/kjqSv80KrOU"
+        headerHeight={headerClientHeight}
+      />
+      <ProjectSection
+        title="Deluxo"
+        text={ecommerceText}
+        image={deluxoImg}
+        href="https://deluxo.com.ar"
+      />
+      <ProjectSection
+        title="MyMovie"
+        text={omdbText}
+        image={omdbImg}
+        href="https://mymovie.com.ar"
+      />
+      <AboutMeSection headerHeight={headerClientHeight} />
+      <ContactMeSection headerHeight={headerClientHeight} />
+      <AnimationBackground />
+    </>
+  );
 }

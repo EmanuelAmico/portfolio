@@ -1,0 +1,70 @@
+.contactMe {
+  height: calc(100vh - var(--header-height));
+  width: 80%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.contactMe h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: $text-color;
+  font-family: $main-font;
+  text-align: center;
+}
+
+.contactMe h3 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 3.9rem;
+  font-family: $main-font;
+  color: $text-color;
+  text-align: center;
+  padding: 3.2rem 0 4.8rem 0;
+}
+
+.contactMeSocialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactMeSocialLinks a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  font-family: $main-font;
+  color: $text-color;
+  text-decoration: none;
+  margin-right: 2.4rem;
+}
+
+.contactMeSocialLinks a:hover {
+  color: $text-color-hover;
+  transition: all 0.35s;
+}
+
+.contactMeSocialLinks img {
+  margin-right: 0.8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .contactMe {
+    padding: 0 0.8rem;
+  }
+
+  .contactMeSocialLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactMeSocialLinks a {
+    padding: 1.6rem;
+  }
+}
