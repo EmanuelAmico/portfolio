@@ -11,6 +11,7 @@ import s from "./styles.module.scss";
 const WelcomeSection: FC = () => {
   return (
     <section className={s.welcomeSection} id="start">
+      <p className={s.changelog}>Last Update | August 2021</p>
       <div className={s.titleContainer}>
         <h3>AMICO.</h3>
         <h4>FULL STACK DEVELOPER</h4>
